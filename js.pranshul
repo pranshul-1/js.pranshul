@@ -7,10 +7,8 @@ Assessment Requirements
 3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
 4. For good measure, getTotalSupply() should return the number of NFTs you have created
 */
-
 // create a variable to hold your NFTs
 let nfts = [];
-
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
@@ -23,7 +21,6 @@ function MintNFT(name, eyeColor, shirtType, bling) {
     };
     nfts.push(nft);
 }
-
 // create a "loop" that will go through an "array" of NFTs
 // and print their metadata with console.log()
 function listNFTs() {
@@ -33,26 +30,21 @@ function listNFTs() {
         console.log(`Eye Color: ${nfts[i].eyeColor}`);
         console.log(`Shirt Type: ${nfts[i].shirtType}`);
         console.log(`Bling: ${nfts[i].bling}`);
-        console.log('-------------------');
+        console.log(`Bike Color: ${nfts[i].bikecolor}`);
     }
 }
-
 // print the total number of NFTs we have minted to the console
-function getTotalSupply() {
+function getSupply() {
     return nfts.length;
 }
-
 // call your functions below this line
-
 // Minting some NFTs
 MintNFT("Rohan", "Blue", "shirt", "Bracelete");
 MintNFT("Pranshul", "Green", "Shoulder", "Ring");
 MintNFT("Ansh", "Red", "TShirt", "Silver Chain");
 MintNFT("Rahul", "Black", "TShirt", "Chain");
 MintNFT("Paal", "Red", "Shirt", "Silver Ring");
-
 // Listing all NFTs
 listNFTs();
-
 // Printing the total supply of NFTs
-console.log(`Total Supply: ${getTotalSupply()}`);
+console.log(`Total Supply: ${getSupply()}`);
