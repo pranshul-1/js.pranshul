@@ -17,7 +17,8 @@ function MintNFT(name, eyeColor, shirtType, bling, bikecolor) {
         name: name,
         eyeColor: eyeColor,
         shirtType: shirtType,
-        bling: bling
+        bling: bling,
+        bikecolor: bikecolor
     };
     nfts.push(nft);
 }
@@ -39,11 +40,11 @@ function getSupply() {
 }
 // call your functions below this line
 // Minting some NFTs
-MintNFT("Rohan", "Blue", "shirt", "Bracelete");
-MintNFT("Pranshul", "Green", "Shoulder", "Ring");
-MintNFT("Ansh", "Red", "TShirt", "Silver Chain");
-MintNFT("Rahul", "Black", "TShirt", "Chain");
-MintNFT("Paal", "Red", "Shirt", "Silver Ring");
+MintNFT("Rohan", "Blue", "shirt", "Bracelete","White");
+MintNFT("Pranshul", "Green", "Shoulder", "Ring","Blue");
+MintNFT("Ansh", "Red", "TShirt", "Silver Chain","Black");
+MintNFT("Rahul", "Black", "TShirt", "Chain","Green");
+MintNFT("Paal", "Red", "Shirt", "Silver Ring","Red");
 // Listing all NFTs
 listNFTs();
 // Printing the total supply of NFTs
