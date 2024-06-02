@@ -12,7 +12,7 @@ let nfts = [];
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function MintNFT(name, eyeColor, shirtType, bling) {
+function MintNFT(name, eyeColor, shirtType, bling, bikecolor) {
     const nft = {
         name: name,
         eyeColor: eyeColor,
